@@ -1,0 +1,193 @@
+.main {
+    display: flex;
+    padding: 25px 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    margin: 0;
+}
+
+.main h2 {
+    margin: 0;
+    align-self: stretch;
+    color: #000;
+    font-family: Kumbh Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.main span {
+    color: var(--Roxo, #B98FFF);
+}
+
+.main-text-icon {
+    display: flex;
+    align-items: center;
+    gap: 66px;
+    align-self: stretch;
+}
+
+
+.titulo1 {
+    margin: 0;
+    font-family: 'Kumbh Sans';
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 9px;
+    position: relative;
+    -webkit-text-stroke: 3px #B98FFF; 
+    color: transparent;
+}
+
+.titulo1:hover{
+    color: #B98FFF;
+}
+
+.main-icon {
+    display: flex;
+    align-items: center;
+    gap: 79px;
+    flex: 1 0 0;
+}
+
+i {
+    font-size: 100px;
+}
+
+i:hover{
+    color: var(--Roxo, #B98FFF);
+}
+
+.titulo2 {
+    margin: 0;
+    align-self: stretch;
+    color: var(--Roxo, #B98FFF);
+    font-family: Kumbh Sans;
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 9px;
+    letter-spacing: 15px;
+}
+
+.titulo2:hover{
+    -webkit-text-stroke: 3px #B98FFF; 
+    color: transparent;
+}
+
+.main h3 {
+    margin: 0;
+    align-self: stretch;
+    color: #000;
+    font-family: Kumbh Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 2.25px;
+    text-align: right;
+    margin: 0 50px;
+}
+
+@media screen and (max-width: 1175px) {
+    .main h1{
+        font-size: 120px;
+    }
+
+    i{
+        font-size: 70px;
+    }
+
+    .main-icon{
+        gap: 50px;
+    }
+
+    .main h3{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main{
+        padding: 20px 25px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main h1{
+        font-size: 100px;
+        
+    }
+
+    .titulo1, .titulo2{
+        letter-spacing: 4px;
+    }
+
+    i{
+        font-size: 50px;
+    }
+
+    .main-text-icon{
+        gap: 20px;
+    }
+
+    .main-icon{
+        gap: 20px;
+    }
+
+    .main h2, .main h3{
+        font-size: 30px;
+        
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .main h1{
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .main h1{
+        font-size: 60px;
+    }
+
+    .main h2, .main h3{
+        font-size: 22px;
+        
+    }
+
+    i{
+        font-size: 35px;
+    }
+
+    .main-text-icon{
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .main h1{
+        font-size: 55px;
+    }
+
+    .main h2, .main h3{
+        font-size: 20px;
+        
+    }
+
+    .titulo1, .titulo2{
+        letter-spacing: 0px;
+    }
+
+
+    i{
+        font-size: 25px;
+    }
+}
