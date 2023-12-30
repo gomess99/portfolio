@@ -59,7 +59,7 @@
     align-self: stretch;
 }
 
-.selectionProject-projeto img{
+.imgProject{
     width: 750px;
     height: 428.049px;
 }
@@ -151,7 +151,7 @@
 }
 
 @media screen and (max-width: 780px) {
-    .selectionProject-projeto img{
+    .imgProject{
         width: 479.878px;
         height: 267.683px;
     }
@@ -170,7 +170,7 @@
         font-size: 22px;
     }
 
-    .selectionProject-projeto img{
+    .imgProject{
         width: 335.915px;
         height: 187.378px;
         
