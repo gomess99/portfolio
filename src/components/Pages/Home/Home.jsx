@@ -6,6 +6,7 @@ import Main from "../../Main/Main";
 import SectionProject from "../../SectionProject/SelectionProject";
 import SectionTools from "../../SectionTools/SectionTools";
 import SectionFormation from "../../SectionFormation/SectionFormation";
+import SectionContacts from "../../SectionContacts/SectionContacts";
 
 function Home(){
     return(
@@ -15,6 +16,7 @@ function Home(){
             <SectionProject />
             <SectionTools />
             <SectionFormation />
+            <SectionContacts />
             <Footer />
         </div>
     )
