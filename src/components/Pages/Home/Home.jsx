@@ -5,6 +5,7 @@ import Footer from "../../Footer/Footer";
 import Main from "../../Main/Main";
 import SectionProject from "../../SectionProject/SelectionProject";
 import SectionTools from "../../SectionTools/SectionTools";
+import SectionFormation from "../../SectionFormation/SectionFormation";
 
 function Home(){
     return(
@@ -13,6 +14,7 @@ function Home(){
             <Main />
             <SectionProject />
             <SectionTools />
+            <SectionFormation />
             <Footer />
         </div>
     )
