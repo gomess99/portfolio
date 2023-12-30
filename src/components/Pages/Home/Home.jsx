@@ -3,14 +3,16 @@ import "./Home.css";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 import Main from "../../Main/Main";
-import SelectionProject from "../../SectionProject/SelectionProject";
+import SectionProject from "../../SectionProject/SelectionProject";
+import SectionTools from "../../SectionTools/SectionTools";
 
 function Home(){
     return(
         <div>
             <Navbar />
             <Main />
-            <SelectionProject />
+            <SectionProject />
+            <SectionTools />
             <Footer />
         </div>
     )
