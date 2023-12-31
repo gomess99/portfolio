@@ -11,7 +11,7 @@ import imgCSS3 from "../../img/tools/css.svg";
 
 function SectionTools(){
     return(
-        <div className="sectionTools">
+        <div id="tools" className="sectionTools">
             <div className="selectionProject-titulo">
                 <div>
                     <h2>FERRAMENTAS</h2>

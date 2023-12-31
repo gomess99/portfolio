@@ -11,7 +11,7 @@
             navigate("/project");
           };
         return(
-            <div className="selectionProject">
+            <div id="projects" className="selectionProject">
                 <div className="selectionProject-titulo">
                     <div>
                         <h2>PROJETOS</h2>

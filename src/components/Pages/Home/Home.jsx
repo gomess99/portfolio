@@ -12,13 +12,14 @@ function Home(){
         <div>
             <Navbar />
             <Main />
-            <SectionProject />
-            <SectionTools />
-            <SectionFormation />
-            <SectionContacts />
+            <SectionProject id="projects" />
+            <SectionTools id="tools" />
+            <SectionFormation id="formation" />
+            <SectionContacts id="contacts" />
             <Footer />
         </div>
     )
 }
+
 
 export default Home;

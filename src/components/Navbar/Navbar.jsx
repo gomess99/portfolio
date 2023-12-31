@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../img/logo.svg";
 import { Link as RouterLink } from "react-router-dom";
+import { scroller } from "react-scroll";
+
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,6 +12,17 @@ function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
+  const scrollToComponent = (component) => {
+    const targetElement = document.getElementById(component);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+      setMenuOpen(false);
+    } else {
+      console.error("Element not found:", component);
+    }
+  };
+  
+
   return (
     <nav className={`navbar ${menuOpen ? "menu-open" : ""}`}>
       <RouterLink to="/">
@@ -17,10 +30,10 @@ function Navbar() {
       </RouterLink>
 
       <div className={`navbar-text ${menuOpen ? "menu-text-open" : ""}`}>
-        <a href="">PROJETOS</a>
-        <a href="">FERRAMENTAS</a>
-        <a href="">FORMAÇÃO</a>
-        <a href="">CONTATOS</a>
+        <a onClick={() => scrollToComponent("projects")}>PROJETOS</a>
+        <a onClick={() => scrollToComponent("tools")}>FERRAMENTAS</a>
+        <a onClick={() => scrollToComponent("formation")}>FORMAÇÃO</a>
+        <a onClick={() => scrollToComponent("contacts")}>CONTATOS</a>
       </div>
       <div className="sandwich-menu" onClick={toggleMenu}>
         <div className="line1"></div>
@@ -30,5 +43,6 @@ function Navbar() {
     </nav>
   );
 }
+
 
 export default Navbar;

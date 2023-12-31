@@ -24,7 +24,7 @@ function SectionContacts() {
   };
 
   return (
-    <div className="sectionContacts">
+    <div id="contacts" className="sectionContacts">
       <div className="sectionContacts-copy">
         <p>{isCopied ? "Copiado!" : "gabrielggcpro@gmail.com"}</p>
         <i

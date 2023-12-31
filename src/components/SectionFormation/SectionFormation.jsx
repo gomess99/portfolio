@@ -5,7 +5,7 @@ import logoBoticario from "../../img/Formation/logoboticario.png"
 
 function SectionFormation(){
     return(
-        <div className="sectionFormation">
+        <div id="formation" className="sectionFormation">
             <div className="selectionProject-titulo">
                 <div>
                     <h2>FORMAÇÃO</h2>
