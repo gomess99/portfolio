@@ -36,14 +36,27 @@ function SectionContacts() {
       <div className="sectionContacts-contatos">
         <i
           className="bi bi-linkedin"
-          onClick={() => openLink("https://www.linkedin.com/in/gabriel-gomes-6935ba255/")}
+          onClick={() =>
+            openLink("https://www.linkedin.com/in/gabriel-gomes-6935ba255/")
+          }
         ></i>
-        <i className="bi bi-github" onClick={() => openLink("https://github.com/gomess99")}></i>
-        <i className="bi bi-instagram" onClick={() => openLink("https://www.instagram.com/ggomes99/")}></i>
-        <i className="bi bi-whatsapp" onClick={() => openLink("https://bit.ly/3vgsZbc")}></i>
+        <i
+          className="bi bi-github"
+          onClick={() => openLink("https://github.com/gomess99")}
+        ></i>
+        <i
+          className="bi bi-instagram"
+          onClick={() => openLink("https://www.instagram.com/ggomes99/")}
+        ></i>
+        <i
+          className="bi bi-whatsapp"
+          onClick={() => openLink("https://bit.ly/3vgsZbc")}
+        ></i>
       </div>
 
-      <h3>Na busca pela primeira <span>oportunidade</span> na área tech</h3>
+      <h3>
+        Na busca pela primeira <span>oportunidade</span> na área tech
+      </h3>
     </div>
   );
 }

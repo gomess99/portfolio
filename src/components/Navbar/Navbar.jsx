@@ -4,7 +4,6 @@ import logo from "../../img/logo.svg";
 import { Link as RouterLink } from "react-router-dom";
 import { scroller } from "react-scroll";
 
-
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -21,7 +20,6 @@ function Navbar() {
       console.error("Element not found:", component);
     }
   };
-  
 
   return (
     <nav className={`navbar ${menuOpen ? "menu-open" : ""}`}>
@@ -43,6 +41,5 @@ function Navbar() {
     </nav>
   );
 }
-
 
 export default Navbar;
