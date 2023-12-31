@@ -1,15 +1,22 @@
 import React from "react";
 import "./Footer.css";
 import logo2 from "../../img/logo2.svg";
+import { useNavigate } from "react-router-dom";
 
-function Footer(){
-    return(
-        <footer className="footer">
-            <img className="logo" src={logo2} alt="Logo" />
+function Footer() {
+    const navigate = useNavigate();
 
-            <p>&copy; 2023 Gabriel Gomes</p>
-        </footer>
-    )
+    const handleButtonClick = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        navigate("/");
+      };
+  return (
+    <footer className="footer">
+        <img onClick={handleButtonClick} className="logo" src={logo2} alt="Logo" />
+
+      <p>&copy; 2023 Gabriel Gomes</p>
+    </footer>
+  );
 }
 
 export default Footer;

@@ -12,6 +12,7 @@
     fill: #000;
     width: 80px;
     height: 71.499px;
+    cursor: pointer;
 }
 
 .navbar-text {
@@ -56,6 +57,10 @@
 
 .menu-open .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+nav a{
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1000px) {

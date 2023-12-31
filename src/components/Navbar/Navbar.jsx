@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../img/logo.svg";
+import { Link as RouterLink } from "react-router-dom";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +12,10 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${menuOpen ? "menu-open" : ""}`}>
-      <img className="logo" src={logo} alt="Logo" />
+      <RouterLink to="/">
+        <img className="logo" src={logo} alt="Logo" />
+      </RouterLink>
+
       <div className={`navbar-text ${menuOpen ? "menu-text-open" : ""}`}>
         <a href="">PROJETOS</a>
         <a href="">FERRAMENTAS</a>
