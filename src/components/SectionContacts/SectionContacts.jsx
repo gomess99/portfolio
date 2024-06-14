@@ -26,7 +26,7 @@ function SectionContacts() {
   return (
     <div id="contacts" className="sectionContacts">
       <div className="sectionContacts-copy">
-        <p>{isCopied ? "Copiado!" : "gabrielggcpro@gmail.com"}</p>
+        <p>{isCopied ? "Copiado!" : "gabrielgcpro@gmail.com"}</p>
         <i
           className={`bi bi-clipboard copy ${isCopied ? "copied" : ""}`}
           onClick={handleCopyClick}
