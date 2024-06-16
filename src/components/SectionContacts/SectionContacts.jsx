@@ -9,7 +9,7 @@ function SectionContacts() {
   };
 
   const handleCopyClick = () => {
-    const emailText = "gabrielggcpro@gmail.com";
+    const emailText = "gabrielgcpro@gmail.com";
     navigator.clipboard.writeText(emailText).then(
       () => {
         setIsCopied(true);
